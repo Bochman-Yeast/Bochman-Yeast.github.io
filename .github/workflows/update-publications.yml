@@ -1,0 +1,40 @@
+name: Update publications from PubMed
+
+on:
+  schedule:
+    # Every Monday at 13:00 UTC (~8–9am US Eastern). Adjust as you like.
+    - cron: "0 13 * * 1"
+  workflow_dispatch: {}   # lets you click "Run workflow" any time from the Actions tab
+  push:
+    paths:
+      - "pdfs/**"          # re-run automatically when a new PDF is added, to link it up
+
+permissions:
+  contents: write
+
+jobs:
+  update-publications:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Update publications.html from PubMed
+        run: python3 scripts/update_publications.py
+
+      - name: Commit and push if anything changed
+        run: |
+          if git diff --quiet -- publications.html; then
+            echo "No changes to publications.html"
+            exit 0
+          fi
+          git config user.name "bochman-lab-bot"
+          git config user.email "actions@github.com"
+          git add publications.html
+          git commit -m "Auto-update publications from PubMed"
+          git push
