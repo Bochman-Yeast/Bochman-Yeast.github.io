@@ -272,6 +272,20 @@ ol.pub-list li .yr {
 }
 .person .role { color: var(--accent-dark); font-size: 0.9rem; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
 .person .bio { color: var(--ink-soft); font-size: 0.96rem; margin-top: 4px; }
+.person-photo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.person-photo .name, .person-photo .role { margin: 0; }
+.person-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid var(--line);
+}
 .alumni-list { columns: 2; column-gap: 32px; }
 @media (max-width: 640px) { .alumni-list { columns: 1; } }
 .alumni-list li { break-inside: avoid; margin-bottom: 8px; color: var(--ink-soft); }
@@ -335,6 +349,23 @@ footer.site-footer a { color: var(--ink-soft); }
 
 .prose { max-width: 70ch; }
 .prose p { margin: 0 0 16px; }
+
+.photo-figure {
+  margin: 8px 0 28px;
+}
+.photo-figure img {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+}
+.photo-figure figcaption {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin-top: 8px;
+}
 
 /* ---------- protocols ---------- */
 
