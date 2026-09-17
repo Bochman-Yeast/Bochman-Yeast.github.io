@@ -231,6 +231,16 @@ ol.pub-list li .yr {
 .pub-authors { color: var(--ink-soft); }
 .pub-authors b { color: var(--ink); font-weight: 600; }
 .pub-journal { font-style: italic; color: var(--ink-soft); font-size: 0.95rem; }
+
+/* ---------- news & events ---------- */
+
+.news-date {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+.news-desc { color: var(--ink); }
 .badge {
   display: inline-block;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
