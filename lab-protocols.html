@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lab Protocols — The Bochman Lab</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav-row">
+    <a class="brand" href="index.html"><span class="mark">Doc Boc</span> · Bochman Lab</a>
+    <nav class="primary" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="join.html">Join Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="breadcrumb"><a href="people.html">People</a> / Lab Protocols</p>
+    <span class="tag">Lab protocols</span>
+    <h1>Lab protocols</h1>
+    <p class="lede">Bench protocols used in the lab. Carried over from the old password-protected page — all dated October 2019, so treat quantities and instrument settings as a starting point and check with current lab members before running anything unfamiliar.</p>
+    <p style="font-size:0.85rem;color:var(--ink-soft);">This page was password-protected on the old site. It isn't gated here yet — decide whether you want it public, IU-only, or password-protected again before this goes live, and I can help set that up on Sitehost.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <ol class="protocol-toc">
+      <li><a href="#yeast-transformation">Yeast Transformation Protocol</a></li>
+      <li><a href="#sypro-orange">SYPRO Orange Staining for Quantitating Protein</a></li>
+      <li><a href="#annealing-substrates">Annealing substrates for helicase assays</a></li>
+      <li><a href="#serial-dilution">Serial dilution spot tests</a></li>
+      <li><a href="#sdm-pcr">Site-Directed Mutagenesis PCR Amplification</a></li>
+      <li><a href="#pcr">PCR Amplification</a></li>
+      <li><a href="#galactose-growth-curves">Yeast Growth Curves with Galactose Overexpression</a></li>
+      <li><a href="#lasso-assay">Lactic Acid Stain – LASSO Assay</a></li>
+      <li><a href="#gibson-assembly">IDA – Gibson Assembly</a></li>
+      <li><a href="#gdna-prep">gDNA – Yeast or Bacteria Genomic DNA Preparation</a></li>
+      <li><a href="#freezer-mill">Freezer Mill Instructions</a></li>
+      <li><a href="#etbr-detection">Detection of DNA/RNA using Ethidium Bromide</a></li>
+      <li><a href="#emulsifier">Emulsifier Protocol</a></li>
+      <li><a href="#radiolabeling">DNA Radiolabeling: 5'-Phosphorylation of DNA with γ-32P-ATP</a></li>
+      <li><a href="#dh5a">DH5α Transformation</a></li>
+      <li><a href="#abasic-crosslink">Abasic Site-induced DNA Inter-strand Crosslink</a></li>
+    </ol>
+
+    <article class="protocol" id="yeast-transformation">
+      <h3>Yeast Transformation Protocol</h3>
+      <div class="protocol-date">October 3, 2019</div>
+      <div class="protocol-body">
+        <p><b>Goal:</b> To transform plasmid or dsDNA into various yeast strains using LiAc and heat shock.</p>
+        <ol>
+          <li>Set up a 5-mL culture with a single colony, and incubate overnight at 30°C on the roller drum.
+            <ul><li>Pre-heat 50 mL YPD to 30°C in a 250-mL flask in the shaker.</li></ul>
+          </li>
+          <li>Measure the OD<sub>660</sub> of your overnight culture, and dilute it to OD<sub>660</sub> = 0.2 in the 50 mL YPD.</li>
+          <li>Incubate at 30°C in the shaker to OD<sub>660</sub> = 0.7 (~3 h).</li>
+          <li>Pellet the cells in a 50-mL conical tube for 4 min at 4000 rpm in the tabletop centrifuge.
+            <ul><li>Boil carrier DNA (Salmon Sperm DNA – whole tube) in heat block.</li></ul>
+          </li>
+          <li>Wash with 50 mL sterile H<sub>2</sub>O, and pellet as above. Repeat this wash and pelleting one more time.
+            <ul><li>Snap-cool carrier DNA on ice.</li></ul>
+          </li>
+          <li>Resuspend the cells in 1 mL 100 mM LiAc and transfer to a microcentrifuge tube.</li>
+        </ol>
+        <p class="caution">DO NOT USE 1 M LiAc — it will KILL the cells!</p>
+        <ol start="7">
+          <li>Pellet the cells for 15 s at max speed, dump off LiAc, and resuspend in 400 μL 100 mM LiAc.</li>
+          <li>Pipette 50 μL of the cell suspension into two sterile microcentrifuge tubes.</li>
+          <li>Pellet cells as above, and dump off LiAc.</li>
+          <li>Add the following in this order to each tube: 240 μL 50% PEG, 36 μL 1 M LiAc, 2 μL boiled carrier DNA. (Alternatively, make a master mix of these reagents, mix thoroughly, and add everything to each tube at once — useful when doing many transformations.)</li>
+          <li>Add 50 μL sterile H<sub>2</sub>O to one tube (control) and 50 μL DNA to the other. Vortex to mix well.</li>
+          <li>Incubate the tubes for 30 min at 30°C.</li>
+          <li>Add 40 μL 100% DMSO to each, mix by pipetting up and down, and heat shock for 20 min at 42°C.</li>
+          <li>Pellet the cells for 30 s at 7000 rpm, and pipette off the transformation mixture.</li>
+          <li>Gently resuspend the cells in 200 μL YPD, and let them recover for 3–4 h at 30°C.</li>
+          <li>Plate the cells on YPD+Antibiotic, incubate overnight at room temp, then move the plate to 30°C. Colonies should appear in 1–3 days depending on the genetic change made.</li>
+        </ol>
+      </div>
+      <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
+    </article>
+
+    <article class="protocol" id="sypro-orange">
+      <h3>SYPRO Orange Staining for Quantitating Protein</h3>
+      <div class="protocol-date">October 3, 2019</div>
+      <div class="protocol-body">
+        <ol>
+          <li>Run multiple lanes of 0.5 μg/μL BSA (usually 5 lanes ranging from 1–5 μL each). Add enough 2x SDS-PAGE running dye to make the total volume 10 μL. Do the same with the unknown sample.</li>
+          <li>Run on a gel until the dye front runs off.</li>
+          <li>Place gel in a dish with MilliQ water. Rinse the gel twice briefly (&lt;10 s) with MilliQ water.</li>
+          <li>Add 25 mL 7.5% acetic acid supplemented with 5 μL SYPRO Orange.</li>
+          <li>Rock for &gt;30 min, covered in foil.</li>
+          <li>Pour off SYPRO stain and add 25 mL 7.5% acetic acid for ~5 min.</li>
+          <li>Scan on Typhoon.</li>
+        </ol>
+        <p><b>7.5% acetic acid (50 mL):</b> 3.75 mL acetic acid, 46.25 mL MQ H<sub>2</sub>O.</p>
+      </div>
+      <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
+    </article>
+
+    <article class="protocol" id="annealing-substrates">
+      <h3>Annealing substrates for helicase assays</h3>
+      <div class="protocol-date">October 3, 2019</div>
+      <div class="protocol-body">
+        <ol>
+          <li>Set up annealing by adding equimolar amounts of the labelled oligo and cold complement in annealing buffer (20 mM Tris-HCl, pH 8, 4% glycerol, 0.1 mM EDTA, 40 μg/mL BSA, 10 mM DTT, and 10 mM MgOAc).</li>
+          <li>Incubate overnight at 37°C.</li>
+          <li>Run on a gel to check for clean, annealed product.</li>
+        </ol>
+      </div>
+      <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
+    </article>
+
+    <article class="protocol" id="serial-dilution">
+      <h3>Serial dilution spot tests</h3>
+      <div class="protocol-date">October 3, 2019</div>
+      <div class="protocol-body">
+        <p>To test yeast sensitivity to a particular growth condition on plates, compare growth between control and tester strains over a series of dilutions.</p>
+        <ol>
+          <li>Set up 5-mL overnight cultures for your strains of interest; grow at 30°C on the roller drum.</li>
+          <li>Measure the optical density at 660 nm (OD<sub>660</sub>) of your cultures: add 900 μL water to cuvettes (one per culture + a blank); briefly vortex your cultures and add 100 μL culture to the 900 μL water; pipette up and down to mix, and read the OD's on the spec. (This is a 10-fold dilution, so an OD<sub>660</sub> reading of 0.3 is really OD<sub>660</sub> = 3.)</li>
+          <li>Calculate volumes to dilute samples to OD<sub>660</sub> = 1 in 100 μL, e.g.:
+            <table>
+              <tr><th>OD</th><th>Volume cells (100/OD)</th><th>Volume water (100 − volume cells)</th></tr>
+              <tr><td>2.5</td><td>40 μL</td><td>60 μL</td></tr>
+              <tr><td>3</td><td>33 μL</td><td>67 μL</td></tr>
+              <tr><td>2.75</td><td>36 μL</td><td>64 μL</td></tr>
+              <tr><td>3.6</td><td>28 μL</td><td>72 μL</td></tr>
+            </table>
+          </li>
+          <li>Set up dilutions in the first column of a 96-well plate.</li>
+          <li>Add 90 μL water to 4 more wells in each row (for the 10<sup>-1</sup>–10<sup>-4</sup> dilutions).</li>
+          <li>Mix your OD = 1 column by pipetting up and down, remove 10 μL culture, and add to the 10<sup>-1</sup> column. Mix by pipetting up and down, and repeat to make the 10<sup>-2</sup>–10<sup>-4</sup> dilutions.</li>
+          <li>Spot 5 μL of each dilution on your tester media, and incubate the plates lid-up in the dark (wrapped in foil or in a box) until the liquid is absorbed. Turn the plates lid-down, and continue to incubate until good-sized colonies form.</li>
+          <li>Scan plates on a flatbed scanner to record results.</li>
+        </ol>
+      </div>
+      <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
+    </article>
+
+    <article class="protocol" id="sdm-pcr">
+      <h3>Site-Directed Mutagenesis PCR Amplification</h3>
+      <div class="protocol-date">October 3, 2019</div>
+      <div class="protocol-body">
+        <p><b>Goal:</b> PCR amplify a sequence of interest, altering the original sequence by mutated primers.</p>
+        <table>
+          <tr><th>Reagent</th><th>Amount</th></tr>
+          <tr><td>DNA (plasmid)</td><td>0.5 µL</td></tr>
+          <tr><td>10 µM oligo Fwd</td><td>2.5 µL</td></tr>
+          <tr><td>10 µM oligo Rev</td><td>2.5 µL</td></tr>
+          <tr><td>5x Phusion Buffer</td><td>10 µL</td></tr>
+          <tr><td>10 mM dNTP's</td><td>1 µL</td></tr>
+          <tr><td>Phusion Polymerase</td><td>0.5 µL</td></tr>
+          <tr><td>DMSO</td><td>1.5 µL</td></tr>
+          <tr><td>Water</td><td>31 µL</td></tr>
+        </table>
+        <p><b>Thermocycle:</b></p>
+        <table>
+          <tr><td>98°C</td><td>10 min</td><td></td></tr>
+          <tr><td>98°C</td><td>60 sec</td><td rowspan="3">15x</td></tr>
+          <tr><td>63°C</td><td>30 sec</td></tr>
+          <tr><td>72°C</td><td>60 sec/kb</td></tr>
+          <tr><td>72°C</td><td>10 min</td><td></td></tr>
+          <tr><td>10°C</td><td>hold</td><td></td></tr>
+        </table>
+      </div>
+      <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
+    </article>
+
+    <article class="protocol" id="pcr">
+      <h3>PCR Amplification</h3>
+      <div class="protocol-date">October 3, 2019</div>
+      <div class="protocol-body">
+        <p><b>Goal:</b> PCR amplify a sequence of interest. SOI: ______________________</p>
+        <table>
+          <tr><th>Reagent</th><th>Amount</th></tr>
+          <tr><td>DNA (plasmid)</td><td>0.5 µL</td></tr>
+          <tr><td>10 µM oligo Fwd</td><td>2.5 µL</td></tr>
+          <tr><td>10 µM oligo Rev</td><td>2.5 µL</td></tr>
+          <tr><td>5x Phusion Buffer</td><td>10 µL</td></tr>
+          <tr><td>10 mM dNTP's</td><td>1 µL</td></tr>
+          <tr><td>Phusion Polymerase</td><td>0.5 µL</td></tr>
+          <tr><td>MQ H<sub>2</sub>O</td><td>33 µL</td></tr>
+        </table>
+        <p><b>Thermocycle:</b></p>
+        <table>
+          <tr><td>98°C</td><td>5 min</td><td></td></tr>
+          <tr><td>98°C</td><td>30 sec</td><td rowspan="3">30 cycles</td></tr>
+          <tr><td>63°C</td><td>30 sec</td></tr>
+          <tr><td>72°C</td><td>60 sec/kb</td></tr>
+          <tr><td>72°C</td><td>10 min</td><td></td></tr>
+          <tr><td>10°C</td><td>hold</td><td></td></tr>
+        </table>
+      </div>
+      <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
+    </article>
+
+    <article class="protocol" id="galactose-growth-curves">
+      <h3>Yeast Growth Curves with Galactose Overexpression</h3>
+      <div class="protocol-date">October 3, 2019</div>
+      <div class="protocol-body">
+        <p><b>Goal:</b> To assess the effect of gene-of-interest overexpression in different yeast backgrounds. Gene of interest: ______________ &nbsp; Yeast strains: ______________</p>
+        <ol>
+          <li>Grow 5 mL overnight cultures from single colonies from selective media + glucose plates in selective media + raffinose, to allow for rapid overexpression via galactose induction.</li>
+          <li>Spin down cultures for 4 min @ 3500 rpm on the tabletop centrifuge in 15 mL Falcon tubes.</li>
+          <li>Resuspend cells in 1 mL sterile MQ H<sub>2</sub>O and transfer to 1.7 mL microcentrifuge tubes.</li>
+          <li>Add 180 µL water to N + 3 wells of a 96-well plate (N = number of yeast strains).</li>
+          <li>Add 20 µL water to 3 wells for blanks, and 20 µL of culture to a single well/culture.</li>
+          <li>Read the OD<sub>660</sub> on the plate reader.</li>
+          <li>Use Excel to calculate the amount of culture and water to add for each strain to make 1 mL of 1.0 OD<sub>660</sub>, and carry out the dilutions.</li>
+          <li>Add 198 µL media + glucose and 198 µL media + galactose to two wells/strain, + 3 for blanks.</li>
+          <li>Add 2 µL of each 1.0 OD<sub>660</sub> culture to a glucose and galactose well; add sterile water to blanks.</li>
+          <li>Overlay 50 µL mineral oil on top of each well.</li>
+          <li>Insert the 96-well plate into the plate reader and read the OD<sub>660</sub> every 15 min with shaking @ 30°C for 48 h.</li>
+        </ol>
+        <p><b>To analyze the data:</b></p>
+        <ol>
+          <li>Calculate the average mean OD of the replicates for each strain and growth condition (e.g., average of 2 replicates of MBY1 in glucose).</li>
+          <li>For each strain, divide the average mean OD grown in galactose by the average mean OD grown in glucose.</li>
+          <li>Divide the galactose/glucose number of the Pif1-containing strain by the galactose/glucose number for the empty vector strain, for each genotype — this is your final number for how much toxicity Pif1 overexpression caused in that genotype.</li>
+          <li>Input the values in the Excel sheet on Box, indicating the date the experiment was conducted.</li>
+        </ol>
+      </div>
+      <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
+    </article>
+
+    <article class="protocol" id="lasso-assay">
+      <h3>Lactic Acid Stain – LASSO Assay</h3>
+      <div class="protocol-date">October 3, 2019</div>
+      <div class="protocol-body">
+        <ol>
+          <li>Grow overnight cultures of your strains of interest.</li>
+          <li>Spot 5 μL of cells on a YPD10 plate, grow overnight at 30°C.</li>
+          <li>Cover the plate with 6.5 mL soft agar (0.5% agar in 300 mM Tris, 187 mM glutamate, pH 8.3, held at 60°C).</li>
+          <li>Mix 3.2 mL 1% agar (60°C) with staining solution: 1.6 mL 120 mM Tris/75 mM glutamate pH 8.3, 0.4 mL 40 mM NAD, 0.8 mL 4 mg/mL nitroblue tetrazolium, 0.4 mL 2 mg/mL phenazine methosulfate, 7 U glutamate pyruvate transaminase, 7 U L[+]-LDH.</li>
+          <li>Color production will occur slowly at room temperature; you can record images of the plates at any point during formation of the LASSO halo around the cells.</li>
+        </ol>
+        <p style="font-size:0.9rem;color:var(--ink-soft);">Note: a YPD10 plate is the same as a typical YPD plate, except it contains 10% glucose rather than the standard 2%. Pour a few of these for the assay, since the lab does not maintain a standing stock.</p>
+      </div>
+      <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
+    </article>
+
+    <article class="protocol" id="gibson-assembly">
+      <h3>IDA – Gibson Assembly</h3>
+      <div class="protocol-date">October 3, 2019</div>
+      <div class="protocol-body">
+        <p><b>Goal (generic):</b> Assembly of multiple DNA fragments, regardless of size. <b>Goal (specific):</b> ______________</p>
+        <p><b>Set up the reaction:</b></p>
+        <ul>
+          <li>2.5 µL insert DNA</li>
+          <li>2.5 µL vector DNA</li>
+          <li>15 µL IDA Master Mix</li>
+        </ul>
+      </div>
+      <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
+    </article>
+
+    <article class="protocol" id="gdna-prep">
+      <h3>gDNA – Yeast or Bacteria Genomic DNA Preparation</h3>
+      <div class="protocol-date">October 3, 2019</div>
+      <div class="protocol-body">
+        <ol>
+          <li>Resuspend a colony in 100 μL 0.2 M LiAc/1% SDS — or pellet 100–200 μL overnight culture and resuspend as above.</li>
+          <li>Incubate 15–20 min at 65°C.</li>
+          <li>Add 500 μL 95% EtOH or 100% isopropanol, vortex to mix.</li>
+          <li>Pellet DNA &amp; debris for 10 min @ max speed.</li>
+          <li>Aspirate the supernatant (vacuum or pipette off as much liquid as possible). Immediately add 100 μL water so the pellet doesn't dry.</li>
+          <li>Dissolve the pellet in the water by pipetting, vortexing, and incubating in the 37°C water bath for 5–10 min.</li>
+          <li>Vortex the tube, and pellet the cell debris for 5 min, leaving the genomic DNA in solution.</li>
+        </ol>
+        <p style="font-size:0.9rem;color:var(--ink-soft);">This is a quick-and-dirty protocol but produces gDNA usable for PCR. Works best from cells in a fresh liquid culture rather than a colony picked from a plate. To store the DNA for later use, remove the solution away from the debris pellet into a new tube.</p>
+      </div>
+      <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
+    </article>
+
+    <article class="protocol" id="freezer-mill">
+      <h3>Freezer Mill Instructions</h3>
+      <div class="protocol-date">October 3, 2019</div>
+      <div class="protocol-body">
+        <ol>
+          <li>Prepare impactor chambers with bottom lid and impactor bars for the Freezer Mill by immersing completely in a dewar of liquid N<sub>2</sub>.</li>
+        </ol>
+        <p class="caution">Make sure the top lid with the threads is at room temperature when assembling the impactor chamber, or it will be very difficult to assemble.</p>
+        <ol start="2">
+          <li>While chambers are chilling, start filling the freezer mill with liquid N<sub>2</sub>.</li>
+          <li>Turn the freezer mill on (switch on back left of the freezer mill).</li>
+          <li>Make sure the liquid N<sub>2</sub> tank is open (screw valve counter-clockwise).</li>
+          <li>Make sure settings match what is written in this protocol.</li>
+          <li>Press "run" then "pause" — this lets the freezer mill initialize and fill with liquid N<sub>2</sub> without starting the run until un-paused.</li>
+        </ol>
+        <p><b>DOT instructions</b></p>
+        <ol>
+          <li>Pull dots from -80°C, place in a dewar of liquid N<sub>2</sub>.</li>
+          <li>Once chambers are chilled, remove liquid N<sub>2</sub> from the impactor chamber by tipping upside down and holding long forceps at the opening so the impactor bar doesn't fall out.</li>
+          <li>Add dots to chambers (~1 L culture / 2 chambers), close lid, put in N<sub>2</sub> dewar. Don't overfill — the impactor bar needs room to move, and an overfilled chamber is more likely to "puff out" cell powder at the end of the run.</li>
+          <li>Bring chambers and tools (long forceps, spatulas, new Falcon tubes) to the Freezer Mill.</li>
+        </ol>
+        <p><b>Freezer Mill conditions:</b> 10 cycles, 10 CPS; 1 min pre-cool (once); 2 min grinding / 2 min cooldown, oscillating 10 times.</p>
+        <ol>
+          <li>Freezer mill should be full of liquid N<sub>2</sub> if initialized correctly.</li>
+          <li>Place impactor chambers in the holder and make sure they're balanced.</li>
+          <li>Close the metal end-plug that holds the impactor chambers in place, and tighten the handle so there's about a credit card's width of space between the end-plug and the chambers.</li>
+          <li>Close the freezer mill and press "run."</li>
+          <li>After the first cycle, press "pause" and check that the impactor bars are moving freely — each sample should be powder after the first cycle. If not, take the misbehaving chamber out and bang on the bench to dislodge the impactor bar (with cold gloves), and add extra cycles at the end of the run.</li>
+          <li>Once your cells are being lysed successfully, go give your bay mate a high five.</li>
+          <li>Check every 10 minutes to make sure the Freezer Mill is running.</li>
+        </ol>
+        <p><b>When finished:</b></p>
+        <ol>
+          <li>Remove impactor chambers and place in liquid N<sub>2</sub>.</li>
+          <li>Turn the liquid N<sub>2</sub> tank off (clockwise), and turn off the freezer mill.</li>
+          <li>Leave the freezer mill door open and line the area under the lid with paper towels to absorb leftover moisture.</li>
+          <li>Open impactor chambers using the black foam screw opener next to the freezer mill. Tip: tap the powder to the bottom of the tube before carefully opening, to prevent sample loss. Once fully unscrewed, jiggle the lid to remove it.</li>
+          <li>Pour the powder from the impactor chambers into new Falcon tubes.</li>
+          <li>Use the magnet pen next to the freezer mill to remove the impactor bar (a sterile spatula dipped in liquid N<sub>2</sub> can scrape off cell powder stuck to the magnet/lid to minimize lysate loss).</li>
+          <li>Place the conical tube in a dewar with liquid N<sub>2</sub>. It's fine to re-freeze the powder at -80°C until ready for centrifugation.</li>
+        </ol>
+        <p style="font-size:0.9rem;color:var(--ink-soft);">Remember to log your usage on the PBIF website so Giovanni doesn't get mad at you.</p>
+      </div>
+      <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
+    </article>
+
+    <article class="protocol" id="etbr-detection">
+      <h3>Detection of DNA/RNA using Ethidium Bromide</h3>
+      <div class="protocol-date">October 3, 2019</div>
+      <div class="protocol-body">
+        <p class="caution">Ethidium bromide is a potent mutagen. Handle only with gloves and proper precautions.</p>
+        <p><b>Method I – including ethidium bromide in the gel and buffer</b></p>
+        <p><b>Gel preparation:</b></p>
+        <ol>
+          <li>Dissolve agarose in buffer per the standard protocol for preparing an agarose gel.</li>
+          <li>Allow the gel to cool to 60–70°C.</li>
+          <li>Add EtBr to 0.5 µg/mL final concentration (stocks are generally 10 mg/mL, requiring 5 µL stock/100 mL gel).</li>
+          <li>Pour the gel and allow it to set as usual.</li>
+        </ol>
+        <p><b>Buffer preparation:</b></p>
+        <ol>
+          <li>Prepare enough buffer (TBE or TAE) to fill the apparatus.</li>
+          <li>Add 5 µL/100 mL EtBr stock.</li>
+        </ol>
+        <p><b>Run the gel.</b> Upon completion, place the gel in plastic wrap on a UV light box — bands will appear bright orange on a faint orange background.</p>
+        <p style="font-size:0.9rem;color:var(--ink-soft);">This method detects approximately 5 ng of DNA. Destaining in water or 1 mM MgSO<sub>4</sub> may be required to achieve full sensitivity.</p>
+      </div>
+      <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
+    </article>
+
+    <article class="protocol" id="emulsifier">
+      <h3>Emulsifier Protocol</h3>
+      <div class="protocol-date">October 3, 2019</div>
+      <div class="protocol-body">
+        <p><b>Machine preparation</b></p>
+        <ol>
+          <li>If not already filled, fill the sample chamber with 20% ethanol.</li>
+          <li>Open the air valve on the outside of the hood.</li>
+          <li>Put the metal coil on the sample line on ice to cool it (ice water gives better cooling contact than ice alone).</li>
+          <li>Direct the sample line tubing into the sink.</li>
+          <li>Turn the red stop button clockwise until it pushes out, then press the green start button.</li>
+          <li>Flush out some ethanol without turning up air pressure. Turn air pressure up until the homogenizing gauge pressure starts (the noise will be apparent), then adjust back to 40 if needed.</li>
+          <li>When the ethanol is almost flushed out, fill the chamber with 50 mL DI water; when that's almost flushed out, fill with 50 mL buffer.</li>
+        </ol>
+        <p><b>Sample lysis</b></p>
+        <ol>
+          <li>Direct the sample line back into the chamber so liquid is continuously pumped through the system in a loop. Hold the line in position with tape. (Alternative to combat sample heating: direct the line into tubes/beakers on ice and run through the appropriate number of times, for more time on ice.)</li>
+          <li>Pour your sample into the chamber.</li>
+          <li>Adjust pressure for your specific organism: <i>E. coli</i> ~5,000 PSI; yeast ~20,000 PSI; other organisms — test empirically.</li>
+          <li>Let the sample run through the system ~5 times. Fixed flow rate is 3 L/hour.</li>
+        </ol>
+        <p><b>Clean-up</b></p>
+        <ol>
+          <li>Turn down the pressure. Add DI water to the chamber and run it through the machine, then 20% ethanol and run it through.</li>
+          <li>Stop the machine with the red STOP button. Fill the chamber ~1/2 with 20% ethanol.</li>
+          <li>Close the air valve on the outside of the hood.</li>
+          <li>Clean up any mess in the hood and remove all reagents you brought with you. Log your usage on the PBIF website.</li>
+        </ol>
+        <p><b>Supplies to bring to PBIF:</b> sample on ice, bucket of ice, ~100 mL extra buffer, ~100 mL DI water, container for lysed cells, duct or similar-strength tape.</p>
+      </div>
+      <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
+    </article>
+
+    <article class="protocol" id="radiolabeling">
+      <h3>DNA Radiolabeling: 5'-Phosphorylation of DNA with γ-32P-ATP</h3>
+      <div class="protocol-date">October 3, 2019</div>
+      <div class="protocol-body">
+        <p>Oligos to radiolabel: ______________</p>
+        <p><b>Set up the kinase reaction:</b></p>
+        <ul>
+          <li>1 µL oligo (10 µM)</li>
+          <li>2 µL 10x PNK buffer</li>
+          <li>14 µL MQ H<sub>2</sub>O</li>
+          <li>1 µL T4 PNK</li>
+          <li>2 µL γ-32P-ATP</li>
+        </ul>
+        <ol>
+          <li>Incubate the reaction @ 37°C for 30–60 min.</li>
+          <li>Stop the reaction by incubating at 95°C for 10 min.</li>
+          <li>While stopping the reaction, prepare a G-50 spin column: briefly vortex to resuspend the resin, loosen the cap ¼ turn and snap off the bottom closure, place the column in a collection tube and spin 1 min at 750 x g (~3000 rpm).</li>
+          <li>Place the column into a 1.5 mL Eppendorf tube, carefully pipette the labeling reaction onto the resin bed, replace the cap (still ¼ turn loose), and spin 2 min at 750 x g.</li>
+        </ol>
+        <p style="font-size:0.9rem;color:var(--ink-soft);">Assuming 95% recovery, you have 20 µL of 475 nM DNA.</p>
+      </div>
+      <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
+    </article>
+
+    <article class="protocol" id="dh5a">
+      <h3>DH5α Transformation</h3>
+      <div class="protocol-date">October 3, 2019</div>
+      <div class="protocol-body">
+        <p><b>Goal:</b> Transform DNA into <i>E. coli</i> (for cloning). Temperature is the key to the whole process — pay attention to the different temperatures required at each step. This protocol is for chemically competent <i>E. coli</i>; it won't work with electro-competent cells.</p>
+        <ol>
+          <li>Thaw a tube of homemade DH5α cells on ice (5–15 min). Cool your DNA on ice during this time.</li>
+          <li>Avoid holding the bottom of the tube (where the cells are); add your DNA to the cells and briefly swirl with your pipette tip to mix.</li>
+          <li>Return the cells to ice and incubate ~30 min. Pre-heat a bottle of LB or SOC in the 37°C water bath during this interval.</li>
+          <li>Heat-shock the cells in the 42°C water bath for 45 s, and immediately return the tube to ice (hold the tube with its bottom submerged, with your ice bucket next to you).</li>
+          <li>Incubate on ice ~2 min, add 200 μL warmed media, and let the cells recover for 30–60 min in the 37°C water bath. (Less time is OK for AmpR plasmids; 1 h is recommended for other antibiotic markers.) Pre-heat an LB+antibiotic(s) plate to 37°C in the warm room during this interval.</li>
+          <li>Mix the tube by gently pipetting up and down, squirt the entire contents onto the pre-warmed plate, and spread with sterile glass beads.</li>
+          <li>Incubate the plate overnight at 37°C in the warm room.</li>
+        </ol>
+      </div>
+      <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
+    </article>
+
+    <article class="protocol" id="abasic-crosslink">
+      <h3>Abasic Site-induced DNA Inter-strand Crosslink</h3>
+      <div class="protocol-date">October 3, 2019</div>
+      <div class="protocol-body">
+        <p><b>Crosslink formation</b></p>
+        <ol>
+          <li>Resuspend all oligos to 100 µM in 25 mM NaHEPES, pH 7, 100 mM NaCl.</li>
+          <li>Add 25 µL of 100 µM oligo 1 (uracil-containing strand) to a 1.5 mL tube.</li>
+          <li>Add 2 equivalents (50 µL) of 100 µM oligo 2 to the reaction.</li>
+          <li>Incubate oligos at 95°C for 5 min, then switch off the heating block and let cool to room temperature overnight.</li>
+          <li>Set up the UDG reaction and incubate 2 h at 37°C: 75 µL annealed DNA, 10 µL UDG buffer, 2 µL UDG, 13 µL H<sub>2</sub>O.</li>
+          <li>Add 100 µL phenol:chloroform to the DNA, vortex ~20 s, and centrifuge at max speed for 5 min.</li>
+          <li>Carefully remove the aqueous (top) layer into a fresh tube.</li>
+          <li>Precipitate the DNA with 1 µL 20 mg/mL glycogen, 10% v/v 3 M NaOAc pH 5.2, and 5 volumes 100% ethanol. Store at -20°C for 1 h.</li>
+          <li>Centrifuge DNA at max speed at 4°C for 30 min.</li>
+          <li>Remove the supernatant and wash twice with 150 µL 80% ethanol, spinning at max speed at 4°C for 5 min between washes.</li>
+          <li>Let the pellet air-dry until most of the ethanol is gone, and resuspend in 25 µL 50 mM NaHEPES pH 7, 100 mM NaCl.</li>
+          <li>Incubate at 37°C for 5 days in the dark.</li>
+        </ol>
+        <p><b>Labeling via 3' fill-in</b></p>
+        <ol>
+          <li>Label the DNA for 1 h at 37°C: 25 µL crosslinked DNA, 1 µL 1 mM dNTPs without dCTP, 1 µL Klenow fragment, 1 µL α32P-dCTP, 3 µL NEB Buffer 2.</li>
+          <li>Clean up with a G-50 column.</li>
+          <li>Load the whole sample on a 20% denaturing gel (5 mL 40% 19:1 acrylamide:bis-acrylamide, 1 mL 10x TBE, 3.6 g urea, dH<sub>2</sub>O to 10 mL, then add 80 µL 10% APS and 20 µL TEMED just before pouring).</li>
+          <li>Run at 200 V for ~4 h.</li>
+          <li>Expose the gel to film for 5–10 min.</li>
+          <li>Excise the slower-migrating band from the gel, add to a 1.5 mL tube, and crush with a pipette tip.</li>
+          <li>Add 300 µL 0.5x TBE to the crushed gel fragment and incubate overnight at room temperature.</li>
+          <li>Move the liquid away from the gel fragment into a fresh tube.</li>
+          <li>Precipitate the DNA as above and resuspend in 50 µL TE; store at -20°C.</li>
+        </ol>
+      </div>
+      <p class="back-to-top"><a href="#top">↑ Back to top</a></p>
+    </article>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>The Bochman Lab &middot; Department of Molecular &amp; Cellular Biochemistry &middot; Indiana University Bloomington &middot; Simon Hall MSB1 &middot; <a href="mailto:bochman@iu.edu">bochman@iu.edu</a></p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
