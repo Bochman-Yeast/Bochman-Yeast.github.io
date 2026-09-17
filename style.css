@@ -79,6 +79,12 @@ header.site-header {
   font-weight: 700;
 }
 
+.brand-logo {
+  height: 52px;
+  width: auto;
+  display: block;
+}
+
 nav.primary { display: flex; }
 nav.primary ul {
   list-style: none;
