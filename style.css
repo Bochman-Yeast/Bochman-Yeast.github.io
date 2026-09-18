@@ -296,6 +296,15 @@ ol.pub-list li .yr {
 @media (max-width: 640px) { .alumni-list { columns: 1; } }
 .alumni-list li { break-inside: avoid; margin-bottom: 8px; color: var(--ink-soft); }
 .alumni-list li b { color: var(--ink); }
+.li-avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  object-fit: cover;
+  vertical-align: middle;
+  margin-right: 6px;
+  border: 1px solid var(--line);
+}
 
 /* ---------- misc ---------- */
 
